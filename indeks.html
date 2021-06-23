@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 2px solid blue;
+        }
+        img{
+            float: left;
+            margin: 20px;
+        }
+       .main::after{
+           display: table;
+           clear: both;
+           content: "";
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img width="170px" height="270px" style="background-color: blueviolet;" >
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero odit accusamus distinctio. Corporis modi tenetur unde optio saepe aliquid adipisci aspernatur eos cumque suscipit, magnam rerum, natus illum expedita consectetur!</p>
+    </div>
+</body>
+</html>
